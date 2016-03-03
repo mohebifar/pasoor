@@ -1,0 +1,38 @@
+{
+  "name": "pasoor",
+  "version": "1.0.0",
+  "description": "A JavaScript card game module for handling deck stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run eslint",
+    "babel": "babel src --out-dir lib",
+    "eslint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohebifar/pasoor.git"
+  },
+  "keywords": [
+    "Github",
+    "API"
+  ],
+  "author": "Mohamad Mohebifar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohebifar/pasoor/issues"
+  },
+  "homepage": "https://github.com/mohebifar/pasoor#readme",
+  "dependencies": {
+    "rand-utils": "0.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-eslint": "6.0.0-beta.6",
+    "babel-plugin-syntax-flow": "^6.5.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-flow-strip-types": "^6.5.0",
+    "babel-preset-es2015": "^6.5.0",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0"
+  }
+}
