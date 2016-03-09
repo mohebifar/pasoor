@@ -2,7 +2,7 @@
   "name": "pasoor",
   "version": "1.0.0",
   "description": "A JavaScript card game module for handling deck stuff",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "npm run eslint",
     "babel": "babel src --out-dir lib",
