@@ -201,4 +201,14 @@ export default class Deck {
   discardAllHeld() {
     this.held.emptyInto(this.discard);
   }
+
+  /**
+   * Create a deck by given preset
+   * @param preset
+   */
+  static create(preset) {
+    const deck = new Deck();
+
+    return preset(deck);
+  }
 }
