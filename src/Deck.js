@@ -175,20 +175,22 @@ export default class Deck {
    * Shuffle all cards remaining in the deck
    *
    * @access  public
+   * @param   useArc4
    * @return  void
    */
-  shuffleRemaining() {
-    rand.shuffle(this.deck, exports.useArc4 ? 'ARC4' : 'SIMPLE');
+  shuffleRemaining(useArc4 = false) {
+    rand.shuffle(this.deck, useArc4 ? 'ARC4' : 'SIMPLE');
   }
 
   /**
    * Shuffle the discard pile and append them to the deck
    *
    * @access  public
+   * @param   useArc4
    * @return  void
    */
-  shuffleDiscard() {
-    rand.shuffle(this.discard, exports.useArc4 ? 'ARC4' : 'SIMPLE');
+  shuffleDiscard(useArc4 = false) {
+    rand.shuffle(this.discard, useArc4 ? 'ARC4' : 'SIMPLE');
     this.discard.emptyInto(this.deck);
   }
 
