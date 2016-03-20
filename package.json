@@ -1,6 +1,6 @@
 {
   "name": "pasoor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript card game module for handling deck stuff",
   "main": "lib/index.js",
   "scripts": {
