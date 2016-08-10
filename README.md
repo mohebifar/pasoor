@@ -21,5 +21,5 @@ Or with a preset:
 
 ```js
 import { Deck, presets } from 'pasoor';
-const deck = new Deck(presets.shelem);
+const deck = Deck.create(presets.shelem);
 ```
