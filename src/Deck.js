@@ -135,7 +135,7 @@ export default class Deck {
       return cards.map(this.find.bind(this));
     }
 
-    if (!card instanceof Card) {
+    if (!(card instanceof Card)) {
       throw new Error('Cannot find non-card value');
     }
 
@@ -147,7 +147,7 @@ export default class Deck {
           result = [{
             index,
             pileName: pile,
-            pile: self[pile],
+            pile: this[pile],
             card,
           }];
         }

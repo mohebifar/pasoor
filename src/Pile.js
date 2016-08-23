@@ -17,7 +17,7 @@ export default class Pile extends Array {
    * @return  void
    */
   copyInto(array) {
-    array.push.apply(array, this.slice());
+    array.push(...this.slice());
   }
 
   /**
@@ -28,7 +28,7 @@ export default class Pile extends Array {
    * @return  void
    */
   emptyInto(array) {
-    array.push.apply(array, this.empty());
+    array.push(...this.empty());
   }
 
   /**
