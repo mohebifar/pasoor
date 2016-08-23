@@ -4,9 +4,10 @@
   "description": "A JavaScript card game module for handling deck stuff",
   "main": "lib/index.js",
   "scripts": {
-    "test": "npm run eslint",
+    "pretest": "npm run -s eslint",
+    "test": "node test/index.js",
     "babel": "babel src --out-dir lib",
-    "eslint": "eslint src",
+    "eslint": "eslint src test",
     "prepublish": "npm run babel"
   },
   "repository": {
@@ -33,6 +34,10 @@
     "babel-preset-stage-0": "^6.5.0",
     "eslint": "^3.3.1",
     "eslint-config-airbnb-base": "^5.0.3",
-    "eslint-plugin-import": "^1.14.0"
+    "eslint-plugin-import": "^1.14.0",
+    "lodash.isarray": "^4.0.0",
+    "lodash.isfunction": "^3.0.8",
+    "lodash.isplainobject": "^4.0.6",
+    "tape": "^4.6.0"
   }
 }
